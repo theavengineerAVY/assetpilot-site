@@ -1,42 +1,154 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>AssetPilot</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <style>
-body{margin:0;font-family:Arial;background:#0f172a;color:white}
-.container{max-width:1000px;margin:auto;padding:80px 20px}
-h1{font-size:48px}
-p{color:#cbd5e1}
-.button{display:inline-block;background:#2563eb;padding:14px 26px;border-radius:8px;color:white;text-decoration:none;margin-top:20px}
-.section{background:#1e293b;padding:25px;border-radius:10px;margin-top:20px}
+
+body{
+font-family:Arial;
+background:#0b1324;
+color:white;
+margin:0;
+}
+
+.hero{
+padding:80px 20px;
+text-align:center;
+}
+
+.hero h1{
+font-size:48px;
+margin-bottom:10px;
+}
+
+.hero p{
+font-size:20px;
+color:#9fb3d1;
+}
+
+.button{
+background:#2563eb;
+color:white;
+padding:14px 22px;
+border-radius:8px;
+text-decoration:none;
+display:inline-block;
+margin-top:20px;
+}
+
+.section{
+padding:60px 20px;
+max-width:1000px;
+margin:auto;
+}
+
+.section h2{
+margin-bottom:10px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.card{
+background:#111b33;
+padding:20px;
+border-radius:10px;
+}
+
+.image-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.image-grid img{
+width:100%;
+border-radius:10px;
+}
+
+footer{
+text-align:center;
+padding:40px;
+color:#7d8fb3;
+}
+
 </style>
 </head>
 
 <body>
 
-<div class="container">
+<div class="hero">
 
-<h1>AssetPilot Pro</h1>
-<p>Office-to-field asset management.</p>
+<h1>AssetPilot</h1>
 
-<a class="button" href="mailto:paul+ap@avyorkshire.co.uk">
-Request Demo
-</a>
+<p>The faster way to capture installation assets in the field</p>
 
-<div class="section">
-<h2>Projects → Rooms → Devices</h2>
-<p>Track equipment across every site.</p>
+<a class="button" href="mailto:paul+ap@avyorkshire.co.uk">Request Demo</a>
+
 </div>
 
 <div class="section">
-<h2>Photo Documentation</h2>
-<p>Capture installation photos and labels instantly in the field.</p>
+
+<h2>What AssetPilot does</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Projects</h3>
+<p>Create projects and structure them by rooms.</p>
+</div>
+
+<div class="card">
+<h3>Devices</h3>
+<p>Track equipment installed in each location.</p>
+</div>
+
+<div class="card">
+<h3>Photos</h3>
+<p>Capture visual documentation during installation.</p>
+</div>
+
+<div class="card">
+<h3>Records</h3>
+<p>Keep organised installation records for handover.</p>
 </div>
 
 </div>
+
+</div>
+
+<div class="section">
+
+<h2>Example screens</h2>
+
+<div class="image-grid">
+
+<img src="assets/project-room-overview.png">
+
+<img src="assets/device-list.png">
+
+<img src="assets/completed-projects.png">
+
+<img src="assets/project-summary.png">
+
+<img src="assets/photo-gallery.png">
+
+<img src="assets/add-room.png">
+
+</div>
+
+</div>
+
+<footer>
+
+AssetPilot • Built for field engineers
+
+</footer>
 
 </body>
 </html>
