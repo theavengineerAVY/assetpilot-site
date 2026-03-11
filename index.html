@@ -578,7 +578,7 @@
           Send a message and we’ll get back to you with more information about AssetPilot.
         </p>
         <p>
-          Use the form and we’ll take it from there.
+          Use the form to request a demo or ask a question about the platform.
         </p>
       </div>
 
@@ -646,44 +646,6 @@
       }
     });
   </script>
-<section class="section">
-  <div class="wrap">
-    <div class="panel">
-      <h3>Test email</h3>
-      <p>Use this to send a fixed test message without filling in the form.</p>
 
-      <form action="https://script.google.com/macros/s/AKfycbzJz58-rNwrv9RUuQB7N2gZSamKgOpGcU3tHb1MiVic1Yqe7hiar0fSSzk5BB7uQnxlWw/exec" method="POST" target="test_iframe" id="testForm">
-        <input type="hidden" name="name" value="Website Test Button">
-        <input type="hidden" name="company" value="AssetPilot Site">
-        <input type="hidden" name="email" value="paul@avyorkshire.co.uk">
-        <input type="hidden" name="message" value="This is a test email sent from the test button on the AssetPilot website.">
-
-        <button class="btn btn-secondary" type="submit">Test</button>
-        <div class="status" id="testStatus"></div>
-      </form>
-
-      <iframe name="test_iframe" id="test_iframe" style="display:none;"></iframe>
-    </div>
-  </div>
-</section>
-
-<script>
-  const testForm = document.getElementById('testForm');
-  const testIframe = document.getElementById('test_iframe');
-  const testStatus = document.getElementById('testStatus');
-  let testSubmitted = false;
-
-  testForm.addEventListener('submit', function () {
-    testSubmitted = true;
-    testStatus.textContent = 'Sending test email...';
-  });
-
-  testIframe.addEventListener('load', function () {
-    if (testSubmitted) {
-      testStatus.textContent = 'Test request sent. Check paul@avyorkshire.co.uk';
-      testSubmitted = false;
-    }
-  });
-</script>
 </body>
 </html>
